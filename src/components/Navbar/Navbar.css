@@ -1,37 +1,99 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:20px 120px ;
-    background-color: #000000;
-    color: #ECECEC;
-    cursor: pointer;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 90px;
+  background-color: #000000a6;
+  color: #ececec;
 }
 
-.nav-links a{
-    text-decoration: none;
-    color: #ECECEC;
-    font-weight: 300;
-    margin-right: 30px;
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.btn{
-    padding: 0.5rem 1.3rem;
-    border:1px solid #ECECEC;
-    border-radius: 20px;
-    background: #ECECEC;
-    cursor: pointer;
-    
-    
+.nav-links a {
+  text-decoration: none;
+  color: #ececec;
+  font-size: 16px;
+  position: relative;
 }
 
-.btn-outline{
-    padding: 0.5rem 1.3rem;
-    border:1px solid #ECECEC;
-    border-radius: 20px;
-    background: transparent;
-    cursor: pointer;
-    color: #ECECEC; 
-    margin-left: 10px;
+.nav-links a:hover {
+  color: #534897;
+  transition: all 0.2s ease-in;
+}
 
+.arrow {
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 0.4rem 1.4rem;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px #ececec;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-outline {
+  padding: 0.4rem 1.4rem;
+  border: 1px solid white;
+  background: transparent;
+  color: #ececec;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: #ececec;
+  color: black;
+  box-shadow: 0 0 8px #ececec;
+  transition: 0.3s ease-in-out;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 160px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  color: #ececec;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #333;
+  color: #fff;
 }
