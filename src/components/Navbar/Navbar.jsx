@@ -12,12 +12,21 @@ function Navbar() {
         <img src={navbarlogo} alt="Vaultflow Logo" />
       </div>
 
-      <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+      {/* Hamburger Icon */}
+      <div
+        className={`hamburger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
         <a href="#blog">Blog</a>
 
-        {/* Dropdown starts here */}
         <div
           className="dropdown"
           onMouseEnter={() => setDropdownOpen(true)}
@@ -39,9 +48,7 @@ function Navbar() {
           <button className="btn-outline">Talk to an expert</button>
           <button className="btn">Download the app</button>
         </div>
-      </div>
-
-      
+      </nav>
     </header>
   );
 }

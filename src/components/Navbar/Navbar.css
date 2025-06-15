@@ -5,14 +5,14 @@
   padding: 20px 90px;
   background-color: #000000a6;
   color: #ececec;
+  
 }
-
-
 
 .nav-links {
   display: flex;
   align-items: center;
   gap: 30px;
+
 }
 
 .nav-links a {
@@ -23,9 +23,41 @@
 }
 
 .nav-links a:hover {
-  color: #534897;
+  color: #b1abd9;
   transition: all 0.2s ease-in;
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 160px;
+  z-index: 10;
+
+}
+
+.dropdown-menu a{
+  color: #ececec;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown-menu a:hover{
+  background-color: #333;
+  color: #fff;
+}
+
+
 
 .arrow {
   font-size: 10px;
@@ -69,31 +101,71 @@
 }
 
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #1a1a1a;
-  padding: 10px 0;
-  border-radius: 6px;
-  min-width: 160px;
-  z-index: 10;
-  display: flex;
+.hamburger {
+  display: none;
   flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
 }
 
-.dropdown-menu a {
-  color: #ececec;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 14px;
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
 }
 
-.dropdown-menu a:hover {
-  background-color: #333;
-  color: #fff;
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #000000f2;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.3s ease;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links a,
+  .dropdown {
+    margin-bottom: 15px;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    background-color: #222;
+  }
 }
