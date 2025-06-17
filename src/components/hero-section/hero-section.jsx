@@ -16,7 +16,7 @@ function HeroSection() {
           </div>
           <div className="title">
             <p className="heading">
-              Modern analytics <br /> for the modern world
+              Modern analytics <span className="faded-text"><br /> for the modern world</span>
             </p>
           </div>
           <p className="title-description">

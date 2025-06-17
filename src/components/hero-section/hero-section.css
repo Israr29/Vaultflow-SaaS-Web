@@ -81,6 +81,15 @@
   padding: 20px 50px;
 }
 
+
+.faded-text {
+  background: linear-gradient(to bottom, white 30%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .title-section .title-description{
   font-size: 14px;
   color: #ececec;
