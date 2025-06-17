@@ -71,7 +71,7 @@
 }
 
 .btn {
-  padding: 0.4rem 1.4rem;
+  padding: 0.6rem 1.4rem;
   background: white;
   color: black;
   border: none;
@@ -85,7 +85,7 @@
 }
 
 .btn-outline {
-  padding: 0.4rem 1.4rem;
+  padding: 0.6rem 1.4rem;
   border: 1px solid white;
   background: transparent;
   color: #ececec;
