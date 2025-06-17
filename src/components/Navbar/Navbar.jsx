@@ -44,10 +44,13 @@ function Navbar() {
           )}
         </div>
 
-        <div className="nav-buttons">
+        
+        <div className="nav-buttons ">
           <button className="btn-outline">Talk to an expert</button>
           <button className="btn">Download the app</button>
         </div>
+
+        
       </nav>
     </header>
   );

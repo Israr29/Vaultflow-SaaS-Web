@@ -5,6 +5,11 @@
   padding: 20px 90px;
   background-color: #000000a6;
   color: #ececec;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   
 }
 
@@ -128,10 +133,13 @@
 
 
 
+
 @media (max-width: 1024px) {
   .hamburger {
     display: flex;
   }
+
+  
 
   .nav-links {
     position: absolute;

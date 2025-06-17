@@ -1,0 +1,10 @@
+.analysis-dashboard{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analysis-dashboard img{
+    width: 80%;
+}

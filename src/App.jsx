@@ -1,6 +1,7 @@
 
 import Navbar from './components/Navbar/Navbar'
 import HeroSection from './components/hero-section/hero-section'
+
 import './App.css'
 
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <Navbar />
       <HeroSection/>
+      
     </>
   )
 }

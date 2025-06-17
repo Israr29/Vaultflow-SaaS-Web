@@ -1,6 +1,9 @@
 import React from "react";
 import "./hero-section.css";
 import heroBg from "../../assets/hero-section-bg.png";
+import DashboardPreview from '../DashboardPreview/DashboardPreview'
+
+
 
 function HeroSection() {
   return (
@@ -29,7 +32,9 @@ function HeroSection() {
           <button className="btn-outline">Talk to an expert</button>
         </div>
         </div>
+
       </div>
+       <DashboardPreview/>
     </section>
   );
 }
