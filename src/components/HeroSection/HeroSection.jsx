@@ -1,5 +1,5 @@
 import React from "react";
-import "./hero-section.css";
+import "./HeroSection.css";
 import heroBg from "../../assets/hero-section-bg.png";
 import DashboardPreview from '../DashboardPreview/DashboardPreview'
 

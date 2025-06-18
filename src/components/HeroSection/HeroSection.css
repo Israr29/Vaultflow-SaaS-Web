@@ -1,8 +1,7 @@
 .hero-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-
+  min-height: 80vh;
   overflow: hidden;
   color: #ececec;
   padding: 3rem 1rem;
@@ -142,7 +141,15 @@
   .hero-bg {
     width: 60%;
   }
+
+  .hero-content .nav-buttons{
+    display: inline;
+    
+   
+  }
+   
 }
+
 
 @media (max-width: 720px) {
   .title-section .title .heading {

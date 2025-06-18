@@ -1,6 +1,6 @@
-
 import Navbar from './components/Navbar/Navbar'
-import HeroSection from './components/hero-section/hero-section'
+import HeroSection from './components/HeroSection/HeroSection'
+import TrustedBy from './components/TrustedBy/TrustedBy'
 
 import './App.css'
 
@@ -11,6 +11,7 @@ function App() {
     <>
       <Navbar />
       <HeroSection/>
+      <TrustedBy/>
       
     </>
   )

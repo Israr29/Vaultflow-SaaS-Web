@@ -1,0 +1,50 @@
+.logos-section {
+  height: 30vh;
+  padding: 10px 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.logos-heading {
+  color: #ececec;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.logos-container {
+padding: 30px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.logos {
+  display: flex;
+  gap: 5.7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos img {  
+  height: 18px;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logos img:hover {
+  transform: scale(1.1);
+}
+
+
+
+@media (max-width:1020px) {
+   .logos {
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+    
+  .logos img {
+    height: 15px;
+  }
+}
