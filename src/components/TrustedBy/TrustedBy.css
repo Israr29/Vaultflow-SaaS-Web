@@ -1,5 +1,5 @@
 .logos-section {
-  height: 30vh;
+  height: 18vh;
   padding: 10px 30px;
   text-align: center;
   margin: 0;
@@ -12,7 +12,7 @@
 }
 
 .logos-container {
-padding: 30px;
+padding: 90px;
   display: flex;
   justify-content: center;
   

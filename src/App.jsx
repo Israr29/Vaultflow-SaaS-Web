@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar/Navbar'
 import HeroSection from './components/HeroSection/HeroSection'
 import TrustedBy from './components/TrustedBy/TrustedBy'
+import Features from './components/Features/Features'
 
 import './App.css'
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <HeroSection/>
       <TrustedBy/>
+      <Features/>
       
     </>
   )
