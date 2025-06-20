@@ -16,7 +16,7 @@
 - 📁 Organized Folder Structure (React best practices)
 - 🎯 Styled using clean CSS with modern typography (Google Fonts)
 - 📌 Dropdown Navigation with Hover Effects
-- 🌐 Hosted & Version Controlled via GitHub
+
 
 ---
 
