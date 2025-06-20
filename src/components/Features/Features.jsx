@@ -1,4 +1,9 @@
 import FeatureCard from "../FeatureCard/FeatureCard";
+import analysisIcon from "/projects/my-app/src/assets/icons/analysis-icon.png";
+import digitalIcon from "/projects/my-app/src/assets/icons/digital-icon.png";
+import codeIcon from "/projects/my-app/src/assets/icons/code-icon.png";
+import CodeImage from "/projects/my-app/src/assets/code-image.png";
+
 import "./Features.css";
 
 function Features() {
@@ -19,30 +24,44 @@ function Features() {
 
         <div className="features-grid">
           <FeatureCard
-            icon="📊"
+            icon={analysisIcon}
             title="Analytics Dashboard"
-            description="Track and analyze your data easily with real-time charts."
-            linkText="View dashboard"
+            description="Our Analytics Dashboard provides a clear and intuitive interface for you to easily track and analyze your data. From customizable graphs and charts to real-time data updates, our dashboard offers everything you need to gain valuable insights and make data-driven decisions."
             linkUrl="#"
+            linkText="View Dashboard"
+            className=" card-1"
           />
-
           <FeatureCard
-            icon="💳"
+            icon={digitalIcon}
             title="Digital Credit Tokens"
-            description="Incentivize your users with secure and flexible tokens."
-            linkText="View tokens"
+            description="Reward your customers and incentivize engagement with our innovative digital credit tokens. Our tokens can be customized to match your branding, and are a flexible and scalable way to drive customer loyalty and encourage repeat business."
             linkUrl="#"
+            linkText="View tokens"
+            className=" card-2"
+          />
+          <FeatureCard
+            icon={codeIcon}
+            title="Code collaboration"
+            description="Our advanced code synchronization technology ensures that your data is always up-to-date and accurate, no matter where it's coming from. Whether you're integrating data from multiple sources or working with a team of developers, our synchronization technology makes it easy to collaborate and ensure that your data is consistent and reliable."
+            linkUrl="#"
+            linkText="View code collaboration"
+            image={CodeImage}
+            className=" card-3"
+          />
+          <FeatureCard
+            
+            title="Code collaboration"
+            description="Our advanced code synchronization technology ensures that your data is always up-to-date and accurate, no matter where it's coming from. Whether you're integrating data from multiple sources or working with a team of developers, our synchronization technology makes it easy to collaborate and ensure that your data is consistent and reliable."
+            linkUrl="#"
+            linkText="View code collaboration"
+           
+            className=" card-4"
           />
 
-          <FeatureCard
-            icon="🤝"
-            title="Code Collaboration"
-            description="Sync data across teams easily and reliably."
-            linkText="View code collaboration"
-            linkUrl="#"
-            
-          />
+          
         </div>
+
+        
       </div>
     </section>
   );

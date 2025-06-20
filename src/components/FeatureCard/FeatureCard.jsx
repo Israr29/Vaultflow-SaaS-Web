@@ -1,19 +1,23 @@
 import "./FeatureCard.css";
 
-function FeatureCard({ title, description, linkText, linkUrl, icon, extraContent }) {
+function FeatureCard({ icon, title, description, linkText, linkUrl, image, className }) {
   return (
-    <div className="feature-card">
-      <div className="card-left">
-        <div className="icon">{icon}</div>
-        <h3 className="card-title">{title}</h3>
-        <p className="card-description">{description}</p>
-        <a href={linkUrl} className="card-link" target="_blank" rel="noopener noreferrer">
-          {linkText}
-        </a>
+    <div className={`features-cards ${className || ""}`}>
+      <div className="icon">
+        <img src={icon} alt={title} />
       </div>
-      {extraContent && <div className="card-right">{extraContent}</div>}
+      <h3 className="card-title">{title}</h3>
+      <p className="card-description">{description}</p>
+      <a href={linkUrl} className="card-link">{linkText}</a>
+
+      {image && (
+        <div className="card-image">
+          <img src={image} alt={title} />
+        </div>
+      )}
     </div>
   );
 }
+
 
 export default FeatureCard;
