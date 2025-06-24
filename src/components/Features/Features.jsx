@@ -49,12 +49,9 @@ function Features() {
             className=" card-3"
           />
           <FeatureCard
-            
-            title="Code collaboration"
-            description="Our advanced code synchronization technology ensures that your data is always up-to-date and accurate, no matter where it's coming from. Whether you're integrating data from multiple sources or working with a team of developers, our synchronization technology makes it easy to collaborate and ensure that your data is consistent and reliable."
-            linkUrl="#"
-            linkText="View code collaboration"
-           
+            title=" Our powerful analytics provides invaluable insights."
+            description="Unlock the power of data with our cutting-edge analytics product. Get instant insights with our user-friendly Analytics Dashboard, and take advantage of our innovative digital credit tokens to reward your customers and incentivize engagement. "
+            button="Download the app"
             className=" card-4"
           />
 

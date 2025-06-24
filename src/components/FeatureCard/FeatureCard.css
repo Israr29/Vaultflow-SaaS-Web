@@ -1,48 +1,118 @@
 .features-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit , minimax(300px, 1fr));
-  gap:30px;
+  gap:50px;
   padding: 40px;
   }
 
 .features-cards {
- background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(14px);
+  position: relative;
+  background: rgba(186, 123, 241, 0.068);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 16px;
-  padding: 25px;
+  padding: 45px;
   color: white;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: none;
+  box-shadow: 0 1px 24px  rgba(126, 111, 212, 0.144);
+  overflow: hidden;
+  border: 2px solid rgba(210, 158, 255, 0.436);
+  border-bottom-color: transparent;
+  margin-top: 2rem;
+  flex-wrap: nowrap;
 }
+
+
+
+
 
 
 
 .card-3 {
   grid-column: span 2;
-  flex-wrap: wrap;
+  
   text-align: left;
   position: relative;
+  padding: 40px;
+ 
  
 }
 
-.card-3 p{
+
+.card-title{
+  font-size: 30px;
+  text-align: left;
+}
+
+.card-description{
   max-width: 440px;
   margin: 30px 0;
-  font-size: 16px;
+  font-size: 13px;
   text-align: left;
   line-height: 1.5;
 
 }
 
-.card-3 .card-image{ 
- position: absolute;
- top: 20px;
- right: 10px;
+.icon{
+  display: flex;
+  object-fit: cover;
+
 
 }
+
+.features-cards .icon img{
+  height: 90px;
+}
+
+
+
+.card-3 .card-image{ 
+ position: absolute;
+ top: 10px;
+ right: 10px;
+}
+
 
 
 .card-4{
   grid-column: span 2;
   
+ text-align: center;
+  background: linear-gradient(to bottom,  rgba(154, 138, 245, 0.144), #0a24403b);
+  
   
 }
+
+
+.card-4 .card-title {
+  display: inline-block; 
+  font-size: 40px;
+  padding: 0.5rem 1rem;
+  margin: 0 auto; 
+  max-width: 630px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card-4 .card-description {
+  max-width: 640px;
+  margin: 1rem auto; 
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 4rem;
+
+}
+
+
+
+.card-link{
+  color: #ececec;
+  display: flex;
+}
+
+.card-link:hover{
+  color: rgb(83, 83, 212);
+}
+
+
+

@@ -1,7 +1,7 @@
 .features-container {
   width: 100%;
-  height: 140vh;
-  margin-top: 60px;
+
+  margin-top: 9rem;
   color: #ececee;
   display: flex;
   align-items: center;
@@ -13,7 +13,6 @@
 .features-content {
   max-width: 600px;
   padding: 20px;
-  
   max-width: 100%;
 }
 
