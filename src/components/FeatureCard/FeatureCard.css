@@ -20,6 +20,8 @@
   border-bottom-color: transparent;
   margin-top: 2rem;
   flex-wrap: nowrap;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 
@@ -76,9 +78,11 @@
 
 .card-4{
   grid-column: span 2;
-  
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
  text-align: center;
   background: linear-gradient(to bottom,  rgba(154, 138, 245, 0.144), #0a24403b);
+  border-bottom: none;
   
   
 }
