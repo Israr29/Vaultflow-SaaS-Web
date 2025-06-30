@@ -1,5 +1,5 @@
 .logos-section {
-  height: 18vh;
+  height: 20vh;
   padding: 10px 30px;
   text-align: center;
   margin: 0;
@@ -12,7 +12,7 @@
 }
 
 .logos-container {
-padding: 90px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   
@@ -46,5 +46,23 @@ padding: 90px;
     
   .logos img {
     height: 15px;
+  }
+}
+
+@media (max-width: 720px) {
+  .logos-section {
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .logos img {
+    height: 16px;
+  }
+
+  .logos {
+    gap: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -8,3 +8,9 @@
 .analysis-dashboard img{
     width: 80%;
 }
+
+@media (max-width:470px){
+    .analysis-dashboard img{
+        width: 100%;
+    }
+}
