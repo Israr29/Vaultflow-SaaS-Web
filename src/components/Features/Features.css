@@ -1,6 +1,5 @@
 .features-container {
   width: 100%;
-
   margin-top: 9rem;
   color: #ececee;
   display: flex;
@@ -28,4 +27,25 @@
   line-height: 1.6;
 }
 
+@media (max-width: 1020px) {
+  .features-container {
+    margin-top: 6rem;
+    
+    
+  }
+  .features-title {
+    font-size: 2.5rem;
+  }
+  
+}
 
+
+
+@media (max-width: 768px) {
+  .features-title {
+    font-size: 2rem;
+  }
+  .features-subtitle {
+    font-size: 1.1rem;
+  }
+}
