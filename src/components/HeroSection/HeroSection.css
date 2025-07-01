@@ -144,8 +144,12 @@
 
   .hero-content .nav-buttons{
     display: inline;
-    
    
+   
+  }
+
+  .nav-buttons .btn , .nav-buttons .btn-outline{
+    margin-left: 10px;
   }
    
 }
@@ -178,15 +182,16 @@
   .title-section .small-cont p {
     font-size: 0.85rem;
     padding: 0.4rem 0.8rem;
+    width: 320px;
     
   }
 
   
 
   .title-section .title .heading {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     margin-top: 30px;
-    max-width: 380px;
+    max-width: 390px;
   }
 
   .title-description {

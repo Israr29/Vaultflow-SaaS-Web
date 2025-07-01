@@ -12,7 +12,8 @@
 }
 
 .logos-container {
-  padding: 30px;
+  padding: 20px;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   
@@ -61,7 +62,7 @@
 
   .logos {
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top:2rem;
     display: flex;
     flex-direction: column;
   }
