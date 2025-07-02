@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import FeatureCard from "../FeatureCard/FeatureCard";
 import analysisIcon from "/projects/my-app/src/assets/icons/analysis-icon.png";
 import digitalIcon from "/projects/my-app/src/assets/icons/digital-icon.png";
@@ -10,17 +12,29 @@ function Features() {
   return (
     <section className="features-container">
       <div className="features-content">
-        <h1 className="features-title">
+        <motion.h1
+          initial={{ y: 60, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="features-title"
+        >
           Features that
           <br />
           work for your
           <br />
           future.
-        </h1>
-        <p className="features-subtitle">
+        </motion.h1>
+        <motion.p
+          initial={{ y: -40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="features-subtitle"
+        >
           Check out our amazing features and experience the power of Vaultflow
           for yourself.
-        </p>
+        </motion.p>
 
         <div className="features-grid">
           <FeatureCard
@@ -54,11 +68,7 @@ function Features() {
             button="Download the app"
             className=" card-4"
           />
-
-          
         </div>
-
-        
       </div>
     </section>
   );

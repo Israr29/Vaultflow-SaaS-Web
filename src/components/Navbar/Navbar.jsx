@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { useState } from "react";
 import "./Navbar.css";
 import navbarlogo from "/src/assets/Navbar-logo.png";
@@ -7,7 +9,12 @@ function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <header className="navbar">
+    <motion.div
+      initial={{ y: -60, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="navbar"
+    >
       <div className="logo">
         <img src={navbarlogo} alt="Vaultflow Logo" />
       </div>
@@ -44,15 +51,12 @@ function Navbar() {
           )}
         </div>
 
-        
         <div className="nav-buttons ">
           <button className="btn-outline">Talk to an expert</button>
           <button className="btn">Download the app</button>
         </div>
-
-        
       </nav>
-    </header>
+    </motion.div>
   );
 }
 

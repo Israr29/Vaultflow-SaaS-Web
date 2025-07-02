@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+
+
 import "./TrustedBy.css";
 import DellLogo  from '/projects/my-app/src/assets/icons/Logo-dell.png'
 import Logolattice  from '/projects/my-app/src/assets/icons/Logo-lattice.png'
@@ -10,7 +13,11 @@ import logoZendesk  from '/projects/my-app/src/assets/icons/Logo-zendesk.png'
 function TrustedBy() {
   return (
     <>
-      <div className="logos-section">
+      <motion.div initial={{ x: -60, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="logos-section">
         <div className="heading-container">
           <p className="logos-heading">
             Trusted by teams at over 1,000 of the world’s leading organizations
@@ -28,7 +35,7 @@ function TrustedBy() {
             
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

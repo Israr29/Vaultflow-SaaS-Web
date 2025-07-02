@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import React from "react";
 import "./HeroSection.css";
 import heroBg from "../../assets/hero-section-bg.png";
@@ -7,7 +9,12 @@ import DashboardPreview from '../DashboardPreview/DashboardPreview'
 
 function HeroSection() {
   return (
-    <section className="hero-section">
+    <motion.div 
+    initial={{ y: 60, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    className="hero-section">
       <img src={heroBg} alt="hero background" className="hero-bg" />
 
       <div className="hero-content">
@@ -35,7 +42,7 @@ function HeroSection() {
 
       </div>
        <DashboardPreview/>
-    </section>
+    </motion.div>
   );
 }
 
