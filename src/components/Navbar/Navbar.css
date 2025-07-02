@@ -138,6 +138,12 @@
   .hamburger {
     display: flex;
   }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
  
 
   
