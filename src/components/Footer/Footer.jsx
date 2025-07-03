@@ -1,9 +1,16 @@
+import { motion } from 'framer-motion';
 import './Footer.css'
 import logo from "/projects/my-app/src/assets/Navbar-logo.png"
 
 function Footer() {
 return (
-    <footer className="footer">
+    <motion.footer
+    initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+    
+    className="footer">
         <div className="footer-container">
             <div className="footer-box">
                 <h4>Contact </h4>
@@ -39,7 +46,7 @@ San Francisco, CA 94103</p>
                 <img src={logo} alt="Vaultflow Logo" loading='lazy' />
             </div>
         </div>
-    </footer>
+    </motion.footer>
 );
 }
 
