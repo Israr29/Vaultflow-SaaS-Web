@@ -1,6 +1,6 @@
 # 🚀 Vaultflow – Futuristic SaaS Web Application
 
-**Vaultflow** is a sleek, responsive SaaS landing page inspired by futuristic UI/UX design trends. Built using **React.js**, this project showcases a  animated hero section, and clean component-based code structure—ideal for product showcases, startup pitches, or personal portfolios.
+**Vaultflow** is a sleek, responsive SaaS landing page inspired by futuristic UI/UX design trends. Built using **React.js**, this project showcases a  animated hero section, and clean component-based code structure—ideal.
 
 ## 📸 Preview
 
