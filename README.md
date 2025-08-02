@@ -2,9 +2,16 @@
 
 **Vaultflow** is a sleek, responsive SaaS landing page inspired by futuristic UI/UX design trends. Built using **React.js**, this project showcases a  animated hero section, and clean component-based code structure—ideal.
 
+
+### 🚀 Live Preview
+
+[Check it out here ](https://vaultflow-saas-webpage.netlify.app/)
+
+
+
 ## 📸 Preview
 
-![Vaultflow Preview](./src/assets/Navbar-logo.png) <!-- Replace with your project preview image or GIF -->
+![Vaultflow Preview](./src/assets/vaultflow-saas-webpage.png) 
 
 ---
 
@@ -21,7 +28,7 @@
 ---
 
 
----
+
 
 ## 💻 Technologies Used
 
