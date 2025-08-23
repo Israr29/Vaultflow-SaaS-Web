@@ -19,7 +19,6 @@
 
 - 🔥 Fully Responsive Design (Mobile, Tablet, Desktop)
 - 🧠 Modern Hero Section with Gradient Background and CTA
-- 📂 Reusable Components (e.g., Buttons, Navbar)
 - 📁 Organized Folder Structure (React best practices)
 - 🎯 Styled using clean CSS with modern typography (Google Fonts)
 - 📌 Dropdown Navigation with Hover Effects
